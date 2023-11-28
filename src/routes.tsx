@@ -3,7 +3,7 @@ import Basket from './Pages/Basket/Basket'
 import ContactUs from "./Pages/ContactUs/ContactUs"
 import Product from "./Pages/Product/Product"
 import AllProducts from "./Pages/AllProducts/AllProducts"
-let routes = [
+const routes = [
       {
             path: '/', element: <Home />
       },

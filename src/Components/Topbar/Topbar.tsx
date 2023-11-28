@@ -9,7 +9,7 @@ const Topbar = () => {
   const cart = useAppSelector(state => state.cart)
   useEffect(() => {
     setUrl(location.pathname)
-  }, [location.pathname])
+  }, [])
 
   return (
     <header className='relative z-[9998] '>

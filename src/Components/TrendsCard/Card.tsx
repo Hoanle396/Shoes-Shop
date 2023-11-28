@@ -49,7 +49,7 @@ const Card = (props: product) => {
       setIsExists(null)
     }
 
-  }, [cart])
+  }, [cart, props.id])
 
 
   return (

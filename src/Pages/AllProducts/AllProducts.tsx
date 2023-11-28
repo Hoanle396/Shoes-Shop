@@ -10,7 +10,7 @@ const AllProducts = () => {
     const dispatch = useAppDispatch()
     const [filterStatus, setFilterStatus] = useState<string>('all')
     const [skip, setSkip] = useState(8)
-    const [more, _setMore] = useState(true)
+    const [more] = useState(true)
     useEffect(() => {
         dispatch(getProductsFromServer())
     }, [dispatch])

@@ -40,7 +40,7 @@ const ProductMain = (props: product) => {
             setIsExists(null)
         }
 
-    }, [cart, param])
+    }, [cart, param, props.id])
 
     const addToCartHandler = () => {
         const product: productCart = {
