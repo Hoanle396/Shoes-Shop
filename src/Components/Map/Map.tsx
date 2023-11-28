@@ -4,7 +4,7 @@ export const Map = () => {
   return (
     <MapContainer
       className="w-[600px] sm-x2:h-[300px] lg:w-full rounded-md h-[400px]"
-      center={[52.511063, 13.38297]}
+      center={[15.9749742,108.2509214]}
       zoom={15}
       scrollWheelZoom={true}
     >
@@ -12,7 +12,7 @@ export const Map = () => {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      <Marker position={[52.51099, 13.38287]}>
+      <Marker position={[15.9749742,108.2509214]}>
         <Popup>
           Nike
           <br /> Shop

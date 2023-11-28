@@ -1,28 +1,23 @@
-import { SiJordan, SiNike } from "react-icons/si";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+import { AiOutlineShoppingCart, AiOutlineUser } from "react-icons/ai";
 import { RiMenu5Fill } from "react-icons/ri";
-import { useEffect, useState } from "react";
-import { useAppSelector } from "../../Redux/hooks";
+import { SiJordan, SiNike } from "react-icons/si";
 import { WavyLink } from "react-wavy-transitions";
+import { useAppSelector } from "../../Redux/hooks";
 const Topbar = () => {
-  const [url, setUrl] = useState<string>("");
   const cart = useAppSelector((state) => state.cart);
-  useEffect(() => {
-    setUrl(location.pathname);
-  }, []);
 
   return (
     <header className="relative z-[9998] ">
       <div
         className={` ${
-          url.length > 2 ? "bg-white" : "bg-transparent"
+          location.pathname.length > 2 ? "bg-white" : "bg-transparent"
         } flex w-full justify-between  items-center sm-x2:px-4  px-8 py-4 absolute   z-50 top-0 left-0`}
       >
         <div className=" md:hidden">
           <WavyLink duration={1000} color="#024742" to="/">
             <SiNike
               className={`${
-                url.length > 2 ? "text-[#2a6e6a] " : "text-white "
+                location.pathname.length > 2 ? "text-[#2a6e6a] " : "text-white "
               } text-5xl`}
             />
           </WavyLink>
@@ -38,7 +33,7 @@ const Topbar = () => {
           <WavyLink duration={1000} color="#024742" to="/">
             <li
               className={`${
-                url.length < 2 ? " text-black" : " text-gray-600 "
+                location.pathname.length < 2 ? " text-black" : " text-gray-600 "
               } cursor-pointer font-bold outline-0  `}
             >
               Home
@@ -70,16 +65,21 @@ const Topbar = () => {
         </ul>
 
         <div className="flex z-[9997] gap-3">
+          <WavyLink duration={1000} color="#024742" to="/user">
+            <AiOutlineUser />
+          </WavyLink>
           <div
             className={`${
-              url.length > 2 ? "bg-[#024742] text-white" : "bg-white"
+              location.pathname.length > 2
+                ? "bg-[#024742] text-white"
+                : "bg-white"
             } rounded-md px-2 pt-2 pb-1 cursor-pointer relative`}
           >
             <WavyLink duration={1000} color="#024742" to="/basket">
               <AiOutlineShoppingCart />
               <span
                 className={`${
-                  url.length > 2
+                  location.pathname.length > 2
                     ? "bg-[white] text-[#024742]"
                     : "bg-[#024742]  text-white"
                 }  rounded-3xl px-[5px] py-[3px]  text-[9px] -right-1 absolute`}
@@ -140,7 +140,9 @@ const Topbar = () => {
             <WavyLink duration={1000} color="#024742" to="/">
               <li
                 className={`${
-                  url.length < 2 ? " text-[#fff]" : " text-[#dad8d8a2] "
+                  location.pathname.length < 2
+                    ? " text-[#fff]"
+                    : " text-[#dad8d8a2] "
                 } cursor-pointer text-left mt-5 font-bold outline-0  `}
               >
                 Home

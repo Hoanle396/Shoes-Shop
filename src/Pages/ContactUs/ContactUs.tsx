@@ -13,7 +13,7 @@ const ContactUs = () => {
       <section className="bg-[#2a6e6a] py-16 flex justify-around lg:flex-col-reverse lg:justify-center lg:px-5">
         <div className="space-y-8 relative  lg:mt-10">
           <p className="text-white text-4xl md:text-2xl sm-x2:!text-[16px]  ">
-            Nike shop is open from 9 am to 12 pm
+            Shop is open from 8 am to 10 pm
           </p>
           <p className="text-white text-4xl md:text-2xl sm-x2:!text-[16px]  ">
             We do not have another shop
@@ -21,31 +21,31 @@ const ContactUs = () => {
           <div className="flex space-x-4 text-4xl sm-x2:!text-[26px] sm:!justify-evenly  lg:justify-end relative bottom-1">
             <a
               className="text-[#ffffff82] hover:text-white transition-colors"
-              href="https://instagram.com/nike"
+              href="#"
             >
               <AiFillInstagram />
             </a>
             <a
               className="text-[#ffffff82] hover:text-white transition-colors"
-              href="https://twitter.com/Nike"
+              href="#"
             >
               <AiOutlineTwitter />
             </a>
             <a
               className="text-[#ffffff82] hover:text-white transition-colors"
-              href="https://www.facebook.com/nike"
+              href="#"
             >
               <BsFacebook />
             </a>
             <a
               className="text-[#ffffff82] hover:text-white transition-colors"
-              href="https://www.youtube.com/user/nike"
+              href="#"
             >
               <AiFillYoutube />
             </a>
           </div>
           <p className="text-white absolute bottom-2 sm:relative sm:bottom-0 text-4xl md:text-2xl sm-x2:!text-[16px]  ">
-            Germany, Berlin, VoBstraBe Street
+            470 Tran Dai Nghia, Ngu Hanh Son, Da Nang
           </p>
         </div>
         <Map />
@@ -74,7 +74,7 @@ const ContactUs = () => {
           >
             <BsPhone className="mb-3 text-2xl" />
             <span>Compony Info:</span>
-            <p>+49 (0) 6929993500 </p>
+            <p>+84 (0) 345666888 </p>
           </div>
           <div
             style={{
@@ -85,7 +85,7 @@ const ContactUs = () => {
           >
             <BsPhone className="mb-3 text-2xl" />
             <span>Product & Orders:</span>
-            <p>+49 (0) 6995206453 </p>
+            <p>+84 (0) 345666888 </p>
           </div>
           <div
             style={{
@@ -96,7 +96,7 @@ const ContactUs = () => {
           >
             <BiLogoGmail className="mb-3 text-2xl" />
             <span>Gmail:</span>
-            <p>Nike@gmail.com </p>
+            <p>nike-shop@gmail.com </p>
           </div>
         </main>
       </section>
