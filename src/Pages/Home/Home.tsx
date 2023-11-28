@@ -1,19 +1,19 @@
-import Shoes3d from "../../Components/Shoes3d/Shoes3d";
 import { useEffect } from "react";
-import { Virtual, Pagination, Navigation, Autoplay } from "swiper/modules";
+import { IoIosArrowRoundForward } from "react-icons/io";
 import { SiJordan, SiNike } from "react-icons/si";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { WavyLink } from "react-wavy-transitions";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Autoplay, Navigation, Pagination, Virtual } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import Loader from "../../Components/Loader/Loader";
+import ParticlesComponent from "../../Components/Particles/Particles";
+import Shoes3d from "../../Components/Shoes3d/Shoes3d";
 import CardSlider from "../../Components/SliderCard/Card";
 import Card from "../../Components/TrendsCard/Card";
-import ParticlesComponent from "../../Components/Particles/Particles";
 import { getProductsFromServer } from "../../Redux/Slice/Product";
 import { useAppDispatch, useAppSelector } from "../../Redux/hooks";
-import Loader from "../../Components/Loader/Loader";
-import { WavyLink } from "react-wavy-transitions";
-import { IoIosArrowRoundForward } from "react-icons/io";
 const Home = () => {
   const products = useAppSelector((state) => state.product);
   const dispatch = useAppDispatch();
